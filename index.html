@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Jogo da Adivinhação</h1>
+        
+
+        <div class="score-box">
+            Pontuação: <span id="score">0</span>
+    </div> 
+
+    <p class="pergunta">Qual o número? (entre 1 e 10)</p>
+
+    <form id="game-form">
+        <input
+            type="number"
+            id="palpite"
+            min="1"
+            max="10"
+            placeholder="Ex: 7"
+            required
+            autofocus
+        >
+        <button type="submit" id="bnt-chutar">Chutar</button>
+    </form>
+
+    <div id="mensagem" class="mensagem"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

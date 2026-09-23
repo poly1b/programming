@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0b2545, #134074);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #8da9c4;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+    border: 2px solid #00509d;
+}
+
+h1 {
+    color: #0b2545;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.score-box {
+    background-color: #002855;
+    color: #eef4f8;
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2)
+}
+
+.pergunta {
+    color: #002855;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="number"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #00509d;
+    background-color: #eef4f8;
+    color: #002855;
+    font-size: 1.2rem;
+    text-align: center;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #002855;
+    box-shadow: 0 0 8px rgba(0, 80, 157, 0.5);
+}
+
+button {
+    background-color: #00509d;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #003f7a;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.mensagem {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    min-height: 35px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Variações de tons de azul para o feedback*/
+.mensagem.acerto {
+    background-color: #002855;
+    color: #90e0ef;
+    border: 1px solid #0077b6;
+}
+
+.mensagem.erro {
+    background-color: #001233;
+    color: #979dac;
+    border: 1px solid #0466c8;
+}
